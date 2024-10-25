@@ -11,12 +11,11 @@
 #include <cstdint> //for uint8_t, etc
 #include <cstddef> //for size_t
 
-
 class Thorlabs_TCA9546 {
 public:
 
 	//Initialize I2C mux with I2C instance and I2C address.
-	bool begin(uint8_t addr = 0x70);
+	void begin(uint8_t addr = 0x70);
 
 	//Select I2C channel to use. Channel selection is 0-4.
 	bool selectChannel(uint8_t channel);

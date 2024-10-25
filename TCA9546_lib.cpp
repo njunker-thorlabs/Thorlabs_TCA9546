@@ -7,7 +7,7 @@
 
 #include "TCA9546_lib.h"
 
-bool Thorlabs_TCA9546::begin(uint8_t addr)
+void Thorlabs_TCA9546::begin(uint8_t addr)
 {
 	_addr = addr;
 
