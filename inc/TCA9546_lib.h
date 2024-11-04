@@ -23,6 +23,8 @@ public:
 	//Disable all I2C channels.
 	bool disableChannels();
 
+	virtual ~Thorlabs_TCA9546(){}
+
 protected:
 
 	uint8_t _addr;
